@@ -1,7 +1,10 @@
-import {contacts} from "../static-data";
+import {combineReducers} from "redux";
+import user from "./users";
+import contacts from "./contacts";
+import activeUserID from "./activeUserIDs";
 
-const initialState = {contacts};
-
-export default (state = initialState, action) => {
-    return state;
-}
+export default combineReducers({
+    user,
+    contacts,
+    activeUserID
+});

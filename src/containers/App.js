@@ -5,12 +5,12 @@ import './App.css';
 import store from "../store";
 import _ from "lodash";
 function App() {
-    const {contacts} = store.getState();
+    const {contacts, user, activeUserID} = store.getState();
     console.log(_.values(contacts));
     return (
         <div className="App">
             <Sidebar contacts={_.values(contacts)}/>
-            <Main/>
+            <Main user={user} activeUserIds={activeUserID} />
         </div>
     );
 }
