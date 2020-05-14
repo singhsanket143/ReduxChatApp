@@ -5,6 +5,7 @@ import "./Main.css";
 
 const Main = ({user, activeUserId}) => {
     const renderedData = () => {
+        console.log("hit", activeUserId)
         if(!activeUserId) {
             return <Empty user={user} activeUserId={activeUserId} />
         } else {

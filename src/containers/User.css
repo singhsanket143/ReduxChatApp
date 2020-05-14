@@ -17,6 +17,12 @@
 .User__details {
     display: none;
 }
+.User__closeIcon {
+    color: white;
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
 
 @media (min-width: 576px) {
     .User__details {

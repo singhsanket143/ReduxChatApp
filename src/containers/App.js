@@ -10,7 +10,7 @@ function App() {
     return (
         <div className="App">
             <Sidebar contacts={_.values(contacts)}/>
-            <Main user={user} activeUserIds={activeUserID} />
+            <Main user={user} activeUserId={activeUserID} />
         </div>
     );
 }
